@@ -1,0 +1,38 @@
+{
+  "name": "abstract-numbering",
+  "description": "validate abstract numberings of hierarchical document parts",
+  "version": "1.0.0-prerelease-1",
+  "author": {
+    "name": "Kyle E. Mitchell",
+    "email": "kyle@kemitchell.com",
+    "url": "http://kemitchell.com/"
+  },
+  "dependencies": {
+    "is-integer": "^1.0.4",
+    "isobject": "^1.0.0"
+  },
+  "devDependencies": {
+    "check-versions": "1.x",
+    "jscs": "^1.12.0",
+    "jshint": "^2.7.0",
+    "literate-assertions": "0.1.x"
+  },
+  "keywords": [
+    "documents",
+    "enumeration",
+    "heading",
+    "lists",
+    "numbering",
+    "outline"
+  ],
+  "license": "Apache-2.0",
+  "main": "abstract-numbering.js",
+  "repository": "commonform/abstract-numbering.js",
+  "scripts": {
+    "check": "check-versions --check-module",
+    "lint": "jshint abstract-numbering.js && jscs abstract-numbering.js",
+    "pre-commit": "npm run lint && npm run check && npm run test",
+    "test": "literate-assertions < README.md | sed \"s!'abstract-numbering'!'./'!g\" | node",
+    "travis-ci": "npm run pre-commit"
+  }
+}
