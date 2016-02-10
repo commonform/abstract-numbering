@@ -48,5 +48,3 @@ function numbering(argument) {
     argument.length > 0 &&
     // ... each of which is a component.
     argument.every(component) ) }
-
-module.exports.version = '1.0.0-prerelease-1'
