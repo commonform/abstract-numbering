@@ -8,9 +8,6 @@
     "isobject": "^1.0.0"
   },
   "devDependencies": {
-    "check-versions": "1.x",
-    "jscs": "^1.12.0",
-    "jshint": "^2.7.0",
     "literate-assertions": "0.1.x"
   },
   "keywords": [
