@@ -26,7 +26,6 @@
     "outline"
   ],
   "license": "Apache-2.0",
-  "main": "abstract-numbering.js",
   "repository": "commonform/abstract-numbering.js",
   "scripts": {
     "test": "literate-assertions < README.md | sed \"s!'abstract-numbering'!'./'!g\" | node"
