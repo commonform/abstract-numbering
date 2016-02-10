@@ -2,11 +2,7 @@
   "name": "abstract-numbering",
   "description": "validate abstract numberings of hierarchical document parts",
   "version": "1.0.0-prerelease-1",
-  "author": {
-    "name": "Kyle E. Mitchell",
-    "email": "kyle@kemitchell.com",
-    "url": "http://kemitchell.com/"
-  },
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com)",
   "dependencies": {
     "is-integer": "^1.0.4",
     "isobject": "^1.0.0"
