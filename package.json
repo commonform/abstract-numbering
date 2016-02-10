@@ -8,7 +8,8 @@
     "isobject": "^1.0.0"
   },
   "devDependencies": {
-    "literate-assertions": "0.1.x"
+    "defence-cli": "^1.0.5",
+    "replace-require-self": "^1.1.0"
   },
   "keywords": [
     "documents",
@@ -21,6 +22,6 @@
   "license": "Apache-2.0",
   "repository": "commonform/abstract-numbering.js",
   "scripts": {
-    "test": "literate-assertions < README.md | sed \"s!'abstract-numbering'!'./'!g\" | node"
+    "test": "defence -i javascript README.md | replace-require-self | node"
   }
 }
