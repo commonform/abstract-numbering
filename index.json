@@ -1,0 +1,21 @@
+{ "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "required": [ "series", "element" ],
+    "properties": {
+      "series": {
+        "$ref": "#/definitions/position" },
+      "element": {
+        "$ref": "#/definitions/position" } } },
+  "definitions": {
+    "position": {
+      "type": "object",
+      "required": [ "number", "of" ],
+      "properties": {
+        "number": {
+          "type": "integer",
+          "minimum": 1 },
+        "of": {
+          "type": "integer",
+          "minimum": 1 } } } } }
