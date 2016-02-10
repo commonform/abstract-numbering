@@ -1,16 +1,14 @@
-var array = Array.isArray.bind(Array);
-var object = require('isobject');
-var integer = require('is-integer');
+module.exports = numbering
 
-var nonZeroPositiveInteger = function(argument) {
-  return (
-    integer(argument) &&
-    argument >= 1
-  );
-};
+var array = Array.isArray.bind(Array)
+var object = require('isobject')
+var integer = require('is-integer')
+
+function nonZeroPositiveInteger(argument) {
+  return ( integer(argument) && argument >= 1 ) }
 
 // A position is ...
-var position = function(argument) {
+function position(argument) {
   return (
     // ... an object ...
     object(argument) &&
@@ -23,12 +21,10 @@ var position = function(argument) {
     // ... and an "of" property ...
     argument.hasOwnProperty('of') &&
     // ... that is also a non-zero positive integer ...
-    nonZeroPositiveInteger(argument.of)
-  );
-};
+    nonZeroPositiveInteger(argument.of) ) }
 
 // A component is ...
-var component = function(argument) {
+function component(argument) {
   return (
     // ... an object ...
     object(argument) &&
@@ -41,22 +37,16 @@ var component = function(argument) {
     // ... and an "element" property ...
     argument.hasOwnProperty('element') &&
     // ... that is also a position ...
-    position(argument.element)
-  );
-};
+    position(argument.element) ) }
 
 // A numbering is ...
-var numbering = function(argument) {
+function numbering(argument) {
   return (
     // ... an array ...
     array(argument) &&
     // ... of elements ...
     argument.length > 0 &&
     // ... each of which is a component.
-    argument.every(component)
-  );
-};
+    argument.every(component) ) }
 
-module.exports = numbering;
-
-module.exports.version = '1.0.0-prerelease-1';
+module.exports.version = '1.0.0-prerelease-1'
