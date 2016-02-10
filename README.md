@@ -1,6 +1,3 @@
-abstract-numbering.js
-=====================
-
 Validate abstract numberings of hierarchical document parts.
 
 Abstract numberings express how hierarchical document parts like outline sections, headings, or list items should be numbered, without rendering those numberings in any particular way. Other modules in the [`*-numbering` family](https://www.npmjs.com/search?q=-numbering) convert abstract numberings to strings in particular styles, like `"1.2"` or `"1(a)(v)"`.
