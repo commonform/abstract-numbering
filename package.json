@@ -1,6 +1,6 @@
 {
   "name": "abstract-numbering",
-  "description": "validate abstract numberings of hierarchical document parts",
+  "description": "JSON schema for abstract numberings of hierarchical document parts",
   "version": "1.0.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com)",
   "dependencies": {
