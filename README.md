@@ -21,11 +21,17 @@ var assert = require('assert')
 
 assert(
   tv4.validate(
-    [ { // More on series later.
-        series:  { number: 1, of: 1 },
+    [
+      {
+        // More on series later.
+        series:  {number: 1, of: 1},
         // "Element number 1 of 2"
-        element: { number: 1, of: 2 } } ],
-    schema))
+        element: {number: 1, of: 2}
+      }
+    ],
+    schema
+  )
+)
 ```
 
 Note that positions begin with one, not zero:
@@ -33,9 +39,15 @@ Note that positions begin with one, not zero:
 ```javascript
 assert(
   !tv4.validate(
-    [ { series:  { number: 1, of: 1 },
-        element: { number: 0, of: 1 } } ],
-    schema))
+    [
+      {
+        series:  {number: 1, of: 1},
+        element: {number: 0, of: 1}
+      }
+    ],
+    schema
+  )
+)
 ```
 
 Series are used to describe situations when numbering restarts in the
@@ -60,15 +72,23 @@ The abstract numbering for the "Tigers" list item would be:
 ```javascript
 assert(
   tv4.validate(
-    [ // The component for "First Major Heading"
-      { // Numbering of headings does not restart, so there is one series.
-        series:  { number: 1, of: 1 },
-        element: { number: 1, of: 2 } },
+    [
+      // The component for "First Major Heading"
+      {
+        // Numbering of headings does not restart, so there is one series.
+        series:  {number: 1, of: 1},
+        element: {number: 1, of: 2}
+      },
       // The component for "Tigers"
-      { // There are two series here, the first for fruit and animals.
+      {
+        // There are two series here, the first for fruit and animals.
         // "Tigers" is in the second series.
-        series:  { number: 2, of: 2 },
+        series:  {number: 2, of: 2},
         // There are three total elements, of which "Tigers" is second.
-        element: { number: 2, of: 3 } } ],
-    schema))
+        element: {number: 2, of: 3}
+      }
+    ],
+    schema
+  )
+)
 ```
