@@ -18,11 +18,12 @@ very top level of a document:
 
 ```javascript
 var schema = require('abstract-numbering')
-var tv4 = require('tv4')
+var ajv = new (require('ajv'))()
 var assert = require('assert')
 
 assert(
-  tv4.validate(
+  ajv.validate(
+    schema,
     [
       {
         // More on series later.
@@ -30,8 +31,7 @@ assert(
         // "Element number 1 of 2"
         element: { number: 1, of: 2 }
       }
-    ],
-    schema
+    ]
   )
 )
 ```
@@ -40,14 +40,14 @@ Note that positions begin with one, not zero:
 
 ```javascript
 assert(
-  !tv4.validate(
+  !ajv.validate(
+    schema,
     [
       {
         series: { number: 1, of: 1 },
         element: { number: 0, of: 1 }
       }
-    ],
-    schema
+    ]
   )
 )
 ```
@@ -73,7 +73,8 @@ The abstract numbering for the "Tigers" list item would be:
 
 ```javascript
 assert(
-  tv4.validate(
+  ajv.validate(
+    schema,
     [
       // The component for "First Major Heading"
       {
@@ -89,8 +90,7 @@ assert(
         // There are three total elements, of which "Tigers" is second.
         element: { number: 2, of: 3 }
       }
-    ],
-    schema
+    ]
   )
 )
 ```

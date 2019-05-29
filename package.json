@@ -7,10 +7,10 @@
     "index.json"
   ],
   "devDependencies": {
+    "ajv": "^6.10.0",
     "defence-cli": "^1.0.5",
     "replace-require-self": "^1.1.0",
-    "standard-markdown": "^5.0.1",
-    "tv4": "^1.2.7"
+    "standard-markdown": "^5.0.1"
   },
   "keywords": [
     "abstract-numbering",
