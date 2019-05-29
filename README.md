@@ -1,4 +1,6 @@
-Validate abstract numberings of hierarchical document parts.
+# abstract-numbering
+
+JSON schema for abstract numberings of hierarchical document parts
 
 Abstract numberings express how hierarchical document parts like
 outline sections, headings, or list items should be numbered, without
