@@ -6,6 +6,7 @@
   "devDependencies": {
     "defence-cli": "^1.0.5",
     "replace-require-self": "^1.1.0",
+    "standard-markdown": "^5.0.1",
     "tv4": "^1.2.7"
   },
   "keywords": [
@@ -20,6 +21,7 @@
   "license": "BlueOak-1.0.0",
   "repository": "commonform/abstract-numbering",
   "scripts": {
+    "lint": "standard-markdown README.md",
     "test": "defence -i javascript README.md | replace-require-self | node"
   }
 }
