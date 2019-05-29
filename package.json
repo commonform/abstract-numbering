@@ -3,6 +3,9 @@
   "description": "JSON schema for abstract numberings of hierarchical document parts",
   "version": "2.0.2",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com)",
+  "files": [
+    "index.json"
+  ],
   "devDependencies": {
     "defence-cli": "^1.0.5",
     "replace-require-self": "^1.1.0",
