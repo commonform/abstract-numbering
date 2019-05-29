@@ -16,7 +16,7 @@
     "numbering",
     "outline"
   ],
-  "license": "Apache-2.0",
+  "license": "BlueOak-1.0.0",
   "repository": "commonform/abstract-numbering",
   "scripts": {
     "test": "defence -i javascript README.md | replace-require-self | node"
