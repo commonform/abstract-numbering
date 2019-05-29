@@ -2,7 +2,7 @@
 
 JSON schema for abstract numberings of hierarchical document parts
 
-Abstract numberings express how hierarchical document parts like outline sections, headings, or list items should be numbered, without rendering those numberings in any particular way.  Other modules in the [`*-numbering` family](https://www.npmjs.com/search?q=-numbering) convert abstract numberings to strings in particular styles, like `"1.2"` or `"1(a)(v)"`.
+Abstract numberings express how hierarchical document parts like outline sections, headings, or list items should be numbered, without rendering those numberings in any particular way.  Other modules in the [`*-numbering` family](https://www.npmjs.com/search?q=keywords:abstract-numbering) convert abstract numberings to strings in particular styles, like `"1.2"` or `"1(a)(v)"`.
 
 Each abstract numbering is an array of numbering components, describing first the top-most "parent" of the relevant document part and continuing down to the document part to be numbered itself.
 
