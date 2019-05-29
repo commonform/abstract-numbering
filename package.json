@@ -8,7 +8,7 @@
   ],
   "devDependencies": {
     "ajv": "^6.10.0",
-    "defence-cli": "^1.0.5",
+    "defence-cli": "^3.0.1",
     "replace-require-self": "^1.1.0",
     "standard-markdown": "^5.0.1"
   },
